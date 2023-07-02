@@ -38,7 +38,7 @@
                     </div>
                 </form>
                 <div class="container">
-                    <input type="button" value="Entrar">
+                    <button type="button" class="btn btn-success">Ingresar</button>
                 </div>
             </div>
         </div>
