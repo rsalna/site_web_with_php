@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fondo {
+    background: url('../../img/login-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    height: 50%;
+    width: 20%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    border: 2px solid white;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+}
+
+.titulo {
+    text-align: center;
+    padding: 1.5em;
+}
+
+.titulo p {
+    color: white;
+    font-size: 2.5em;
+}
+
+.form-icon {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.form-icon i {
+    padding-right: 0.5em;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    color: white;
+    transition: 0.5s all ease-in-out;
+    pointer-events: none;
+    left: 5%;
+    font-size: 1em;
+}
+
+.form-group input {
+    background: none;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 2px solid white;
+    height: auto;
+    font-size: 1em;
+    color: white;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
+
+.form-group input:focus + label,
+.form-group input:valid ~ label {
+  transform: translateY(-110%);
+    /* top: -20px; */
+  left: 5%;
+  /* color: #03e9f4; */
+  /* font-size: 12px; */
+}
+.ojos{
+    position: absolute;
+    left: 90%;
+    top: 0%;
+}
+.ojos i{
+    cursor: pointer;
+}
