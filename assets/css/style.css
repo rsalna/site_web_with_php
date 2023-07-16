@@ -8,16 +8,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100%;
+}
+.row {
+  --bs-gutter-x: 0rem!important;
 }
 
-.container {
-    position: relative;
-    height: 50%;
-    width: 20%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1em;
+.contenedor {
     border: 2px solid white;
     background-color: hsla(0, 0%, 10%, 0.1);
     margin-inline: 1.5rem;
@@ -46,11 +43,11 @@
     padding-right: 0.5em;
 }
 
-.form-group {
+.form-g {
     position: relative;
 }
 
-.form-group label {
+.form-g label {
     position: absolute;
     color: white;
     transition: 0.5s all ease-in-out;
@@ -59,7 +56,7 @@
     font-size: 1em;
 }
 
-.form-group input {
+.form-g input {
     background: none;
     margin-bottom: 2em;
     border: none;
@@ -69,20 +66,20 @@
     color: white;
 }
 
-.form-group input:focus {
+.form-g input:focus {
     outline: none;
     border-bottom: 2px solid red;
+    background-color: none;
 }
 
-
-.form-group input:focus + label,
-.form-group input:valid ~ label {
+ .form-g input:focus + label,
+ .form-g input:valid + label {
+  font-size: 12px;
   transform: translateY(-110%);
-    /* top: -20px; */
-  left: 5%;
-  /* color: #03e9f4; */
-  /* font-size: 12px; */
+  left: 0%;
+  color: rgb(219, 77, 77);
 }
+
 .ojos{
     position: absolute;
     left: 90%;
@@ -91,3 +88,22 @@
 .ojos i{
     cursor: pointer;
 }
+
+ .btn-acceso{
+    outline: none;
+    border: none;
+    background-color: hsla(0, 100%, 50%, 0.1);
+    backdrop-filter: blur(8px);
+    color: white;
+    width: 6em;
+    padding: .5em;
+    border-radius: 10px;
+    transition: .5s all ease-in-out;
+}
+
+.btn-acceso:hover{
+    background-color: hsla(0, 100%, 50%, 0.329);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px -3px 14px 7px #ff0534;
+}
+
